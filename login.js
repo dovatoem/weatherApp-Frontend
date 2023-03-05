@@ -5,7 +5,7 @@ document.querySelector('#register').addEventListener('click', function () {
     const email = document.querySelector('#registerEmail').value; 
     const password = document.querySelector('#registerPassword').value; 
     console.log('Sign-up');
-    fetch('http://localhost:3000/users/signup', { 
+    fetch('https://weather-app-backend-alpha.vercel.app/users/signup', { 
         method: 'POST', 
         headers: { 'Content-Type': 'application/json' }, 
         body: JSON.stringify({ name: name, email: email, password: password }), 
@@ -21,7 +21,7 @@ document.querySelector('#connection').addEventListener('click', function () {
     const email = document.querySelector('#connectionEmail').value; 
     const password = document.querySelector('#connectionPassword').value; 
     console.log('Sign-in'); 
-    fetch('http://localhost:3000/users/signin', { 
+    fetch('https://weather-app-backend-alpha.vercel.app/users/signin', { 
         method: 'POST', 
         headers: { 'Content-Type': 'application/json' }, 
         body: JSON.stringify({  email: email, password: password }), 
